@@ -11,6 +11,12 @@ app.get("/", (req, res)=> {
     })
 })
 
+app.get("/api/v1", (req,res)=>{
+    res.status(204).json({
+        message: "we got the user data"
+    })
+})
+
 app.listen(PORT, ()=>{
     console.log(`server is running on the ${PORT}`)
 })
